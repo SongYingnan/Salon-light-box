@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            background: black;
+        }
+        @keyframes demo {
+            from {
+                left: 0;
+            }
+            to {
+                left: -113px;
+            }
+        }
+        .rgb {
+            width: 400px;
+            height: 400px;
+            background: -webkit-repeating-linear-gradient(-45deg, red 0, red 20px, #fff 20px, #fff 40px, blue 40px, blue 60px, #fff 60px, #fff 80px);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            animation: demo 1s linear infinite;
+        }
+
+        .box {
+            width: 113px;
+            height: 300px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            position: relative;
+            margin: 50px auto;
+            box-shadow: 0px 0px 30px #fff, inset 10px 10px 30px #000;;
+        }
+
+        .rgba {
+            width: 113px;
+            height: 300px;
+            background: -webkit-linear-gradient(-0deg, black, white 50%, black);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0.6;
+        }
+
+    </style>
+    <script>
+
+    </script>
+</head>
+<body>
+<div class="box">
+    <div class="rgb"></div>
+    <div class="rgba"></div>
+</div>
+</body>
+</html>
